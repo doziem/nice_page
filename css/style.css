@@ -125,59 +125,6 @@
   font-weight: 100;
 }
 
-.our-service {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  height: 90vh;
-  margin-left: 5rem;
-  margin-right: 5rem;
-  padding-top: 2rem;
-}
-
-.our-service__top h2 {
-  font-size: 3.5rem;
-  font-weight: 700;
-}
-
-.our-service__bottom {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding-top: 2rem;
-  margin-left: 2rem;
-}
-
-.our-service__electrical,
-.our-service__painting,
-.our-service__repair {
-  padding: 1rem;
-}
-
-.our-service__electrical img,
-.our-service__painting img,
-.our-service__repair img {
-  background-color: #e71a23;
-  height: 5rem;
-  padding: 1rem;
-  border-radius: 50%;
-  width: 5rem;
-}
-.our-service__painting h3,
-.our-service__electrical h3,
-.our-service__repair h3 {
-  padding-top: 1.2rem;
-  padding-bottom: 1.2rem;
-  font-weight: 700;
-}
-.our-service__painting p,
-.our-service__electrical p,
-.our-service__repair p {
-  padding-right: 1.8rem;
-  font-style: italic;
-  font-size: 1.19rem;
-}
-
 .btn {
   font-size: 0.8rem;
   background-color: #e71a23;
@@ -259,6 +206,59 @@
 .quality__info p {
   font-size: 1.3rem;
   margin-top: 1.5rem;
+}
+
+.our-service {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  height: 90vh;
+  margin-left: 5rem;
+  margin-right: 5rem;
+  padding-top: 2rem;
+}
+
+.our-service__top h2 {
+  font-size: 3.5rem;
+  font-weight: 700;
+}
+
+.our-service__bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 2rem;
+  margin-left: 2rem;
+}
+
+.our-service__electrical,
+.our-service__painting,
+.our-service__repair {
+  padding: 1rem;
+}
+
+.our-service__electrical img,
+.our-service__painting img,
+.our-service__repair img {
+  background-color: #e71a23;
+  height: 5rem;
+  padding: 1rem;
+  border-radius: 50%;
+  width: 5rem;
+}
+.our-service__painting h3,
+.our-service__electrical h3,
+.our-service__repair h3 {
+  padding-top: 1.2rem;
+  padding-bottom: 1.2rem;
+  font-weight: 700;
+}
+.our-service__painting p,
+.our-service__electrical p,
+.our-service__repair p {
+  padding-right: 1.8rem;
+  font-style: italic;
+  font-size: 1.19rem;
 }
 
 .about {
