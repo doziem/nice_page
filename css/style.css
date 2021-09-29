@@ -1,0 +1,841 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Open Sans', sans-serif;
+}
+.container {
+  margin: 1rem;
+  width: 100%;
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 1rem 3rem;
+}
+
+.navbar .navbar__anchor {
+  text-decoration: none;
+  font-size: 2rem;
+  color: #c4c7cc;
+}
+.hero-bg {
+  background: url('../images/hero-bg.jpg');
+  height: 100%;
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.hero__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+
+.hero {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-left: 3rem;
+  margin-top: 22.5rem;
+}
+.hero h1 {
+  text-align: start;
+  font-size: 6.3rem;
+  color: #fff;
+  letter-spacing: 0.6rem;
+  font-weight: 800;
+}
+
+.hero h4 {
+  font-size: 3.5rem;
+  letter-spacing: 0.5rem;
+  color: #fff;
+  font-weight: 200;
+}
+.hero .hero__horizotal {
+  border-bottom: 0.8rem solid #fff;
+  margin-top: 1.2rem;
+  width: 45%;
+}
+
+.hero__bottom {
+  display: flex;
+  width: 40vw;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2rem 1rem;
+}
+
+.hero-bottom__painting,
+.hero-bottom__cleaning,
+.hero-bottom__plumbing {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.hero__bottom .hero-bottom__painting img,
+.hero-bottom__cleaning img,
+.hero-bottom__plumbing img {
+  height: 8rem;
+  width: 8rem;
+  padding-bottom: 1.5rem;
+}
+.hero-bottom__painting h4,
+.hero-bottom__cleaning h4,
+.hero-bottom__plumbing h4 {
+  font-size: 0.8rem;
+  letter-spacing: normal;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+/* our service */
+
+.service {
+  display: flex;
+  background-color: #f2f2f2;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+  height: 80%;
+  width: 100%;
+}
+.service h4 {
+  color: #cdcdd3;
+}
+
+.service h2 {
+  color: #111111;
+  font-size: 3rem;
+  font-weight: 800;
+}
+
+.service p {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #101010;
+  font-size: 1.5rem;
+  font-weight: 100;
+}
+
+.btn {
+  font-size: 0.8rem;
+  background-color: #e71a23;
+  color: #fff;
+  padding: 1rem 3rem;
+  margin-top: 1rem;
+  text-transform: uppercase;
+}
+
+.plumbing {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #fff;
+  height: 100vh;
+}
+
+.plumbing .plumbing-left img {
+  width: 30rem;
+  height: 25rem;
+  object-fit: contain;
+}
+.plumbing .plumbing-left {
+  margin-left: 11rem;
+}
+.plumbing .plumbing-left p {
+  display: flex;
+  justify-content: center;
+  font-size: 1.1rem;
+  margin-top: 5rem;
+  margin-left: 3rem;
+  margin-right: 5rem;
+}
+.plumbing .plumbing-right h1 {
+  margin-top: 2rem;
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+.plumbing .plumbing-right img {
+  width: 30rem;
+  height: 25rem;
+  margin-top: 3rem;
+  object-fit: cover;
+}
+.plumbing-right h3 {
+  color: #e71a23;
+}
+.plumbing .plumbing-right {
+  margin-right: 11rem;
+}
+.our-service {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  height: 90vh;
+  margin-left: 5rem;
+  margin-right: 5rem;
+  padding-top: 2rem;
+}
+
+.our-service__top h2 {
+  font-size: 3.5rem;
+  font-weight: 700;
+}
+
+.our-service__bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 2rem;
+  margin-left: 2rem;
+}
+
+.our-service__electrical,
+.our-service__painting,
+.our-service__repair {
+  padding: 1rem;
+}
+
+.our-service__electrical img,
+.our-service__painting img,
+.our-service__repair img {
+  background-color: #e71a23;
+  height: 5rem;
+  padding: 1rem;
+  border-radius: 50%;
+  width: 5rem;
+}
+.our-service__painting h3,
+.our-service__electrical h3,
+.our-service__repair h3 {
+  padding-top: 1.2rem;
+  padding-bottom: 1.2rem;
+  font-weight: 700;
+}
+.our-service__painting p,
+.our-service__electrical p,
+.our-service__repair p {
+  padding-right: 1.8rem;
+  font-style: italic;
+  font-size: 1.19rem;
+}
+
+.quality {
+  display: flex;
+  /* width: 100vw; */
+  /* flex-wrap: wrap; */
+  justify-content: center;
+  align-items: center;
+  background-color: #c4c7cc;
+}
+.quality img {
+  height: 700px;
+  width: 40%;
+  object-fit: cover;
+  margin-right: 2rem;
+}
+.quality__info {
+  margin-top: -6rem;
+  margin-right: 8rem;
+  width: 55%;
+}
+
+.quality__info h1 {
+  color: #075586;
+  font-size: 5rem;
+  padding-bottom: 1rem;
+  border-bottom: 0.5rem solid #e71a23;
+}
+
+.quality__info p {
+  font-size: 1.3rem;
+  margin-top: 1.5rem;
+}
+
+.about {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  height: 100vh;
+  background-color: #104e92;
+}
+
+.about__left {
+  width: 50%;
+  margin-left: 8rem;
+  color: #fff;
+}
+.about__left p {
+  font-size: 1.2rem;
+  margin-bottom: -0.7rem;
+}
+.about__left h1 {
+  font-size: 6rem;
+}
+
+.about__right {
+  display: flex;
+  flex-wrap: wrap;
+  width: 50%;
+  margin-right: 3rem;
+}
+.about__right img {
+  height: 15rem;
+  width: 15rem;
+  margin: 1rem;
+  object-fit: cover;
+  /* margin-left: -4rem; */
+}
+
+.about__left .about__big {
+  font-size: 8rem;
+  font-weight: 700;
+  margin-top: -2rem;
+}
+
+.todo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 80vh;
+}
+
+.todo__headers {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.todo__headers p {
+  font-size: 1.8rem;
+  font-weight: 50;
+  margin-left: auto;
+  margin-right: auto;
+}
+.todo__header h1 {
+  font-weight: 650;
+}
+.todo__header h1:first-child {
+  margin-bottom: -0.1rem;
+}
+.todo__header h1:last-child {
+  margin-bottom: 2.5rem;
+  text-align: center;
+}
+
+.btn-white {
+  background-color: #c1c1c1;
+  border: 0.5px solid #333;
+}
+
+.btn-white:hover {
+  color: #fff;
+}
+
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 37vh;
+  background-color: #333333;
+  color: #fff;
+}
+
+footer p {
+  font-size: 0.95rem;
+}
+
+.footer__link {
+  display: flex;
+  align-items: center;
+  padding-top: 3rem;
+  font-size: 0.8rem;
+}
+.footer__link a {
+  color: #abcff7;
+  padding-right: 0.2rem;
+  padding-left: 0.2rem;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  .navbar {
+    width: 80%;
+  }
+  .hero-bg {
+    height: 70%;
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  .hero {
+    margin-top: 10rem;
+  }
+  .hero h4 {
+    font-size: 1.6rem;
+    font-weight: 200;
+  }
+  .hero .hero__horizotal {
+    width: 55%;
+  }
+  .hero h1 {
+    text-align: start;
+    font-size: 3rem;
+    letter-spacing: 0.6rem;
+    font-weight: 800;
+  }
+
+  .hero-bottom__painting h4,
+  .hero-bottom__cleaning h4,
+  .hero-bottom__plumbing h4 {
+    font-size: 01rem;
+  }
+  .service {
+    height: 35vh;
+    width: 80vh;
+  }
+
+  .plumbing {
+    height: 45vh;
+  }
+
+  .plumbing .plumbing-left p {
+    margin-top: 2rem;
+  }
+
+  .plumbing .plumbing-left {
+    margin-left: 2rem;
+  }
+
+  .plumbing .plumbing-right {
+    margin-right: 2rem;
+  }
+  .plumbing .plumbing-left img,
+  .plumbing .plumbing-right img {
+    width: 28rem;
+    height: 24rem;
+  }
+  .our-service {
+    height: 42vh;
+  }
+  .about {
+    display: flex;
+    /* flex-direction: column; */
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 50vh;
+  }
+
+  .about__left {
+    margin-left: 2rem;
+  }
+  .about__right {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    margin-right: 1rem;
+  }
+  .about__right img {
+    height: 12rem;
+    width: 12rem;
+  }
+  .about__left .about__big {
+    font-size: 7rem;
+    font-weight: 700;
+    margin-top: -2.5rem;
+  }
+  .todo {
+    height: 40vh;
+  }
+  footer {
+    height: 20vh;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  .navbar {
+    width: 80%;
+  }
+  .hero-bg {
+    height: 60%;
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  .hero {
+    margin-top: 7rem;
+    margin-left: 1rem;
+  }
+  .hero h4 {
+    font-size: 1.6rem;
+    font-weight: 200;
+  }
+
+  .hero h1 {
+    text-align: start;
+    font-size: 2.8rem;
+    letter-spacing: 0.6rem;
+    font-weight: 800;
+  }
+  .hero .hero__horizotal {
+    border-bottom: 0.8rem solid #fff;
+    margin-top: 1.2rem;
+    width: 50vw;
+  }
+  .hero-bottom__painting h4,
+  .hero-bottom__cleaning h4,
+  .hero-bottom__plumbing h4 {
+    font-size: 1rem;
+  }
+  .service {
+    height: 55vh;
+  }
+
+  .service p {
+    font-size: 1.2rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+  .service .top {
+    padding-top: 2rem;
+  }
+  .text {
+    text-align: center;
+  }
+
+  .plumbing {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .plumbing .plumbing-left p {
+    margin-top: 2rem;
+  }
+
+  .plumbing .plumbing-left {
+    margin-left: 1rem;
+  }
+
+  .plumbing .plumbing-right {
+    margin-right: 1rem;
+    margin-left: 2rem;
+  }
+  .plumbing .plumbing-right h1,
+  .plumbing .plumbing-right h3 {
+    margin-left: 2rem;
+  }
+  .plumbing .plumbing-left img,
+  .plumbing .plumbing-right img {
+    padding-top: 4rem;
+    width: 730px;
+    height: 400px;
+    object-fit: cover;
+    padding-bottom: 5rem;
+  }
+
+  .quality {
+    display: flex;
+    justify-content: center;
+    height: 60vh;
+    align-items: center;
+    background-color: #c4c7cc;
+  }
+  .quality img {
+    height: 500px;
+    width: 50%;
+    object-fit: contain;
+    margin-left: 7rem;
+  }
+  .quality__info {
+    margin-top: -6rem;
+    width: 55%;
+  }
+  .our-service {
+    height: 55vh;
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+
+  .our-service__bottom {
+    margin-left: 1rem;
+  }
+  .about {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+  }
+
+  .about__left {
+    width: 100%;
+  }
+  .about__left p {
+    margin-left: 2rem;
+    margin-right: 2rem;
+  }
+  .about__left h1 {
+    font-size: 5rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+  }
+
+  .about__right {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+    margin-right: 1rem;
+  }
+  .about__right img {
+    height: 21rem;
+    width: 21rem;
+  }
+
+  .todo {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
+
+  .todo__headers {
+    display: flex;
+    flex-direction: column;
+    height: 48vh;
+  }
+
+  .todo__headers p {
+    font-size: 1.4rem;
+  }
+  .todo__headers .todo__button button {
+    margin-left: 1rem;
+  }
+  footer {
+    height: 15vh;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .container {
+    width: 100%;
+  }
+  .navbar svg {
+    display: none;
+  }
+  .hero-bg {
+    display: flex;
+    align-items: center;
+    object-fit: contain;
+    height: 100%;
+    width: 100%;
+    margin-left: -10rem;
+    background-repeat: no-repeat;
+  }
+
+  .hero {
+    margin-top: 2rem;
+    margin-left: 1rem;
+  }
+  .hero h4 {
+    font-size: 1rem;
+    font-weight: 200;
+  }
+
+  .hero h1 {
+    text-align: start;
+    font-size: 2.8rem;
+    font-weight: 800;
+  }
+  .hero .hero__horizotal {
+    border-bottom: 0.8rem solid #fff;
+    margin-top: 1rem;
+    width: 90vw;
+  }
+  .hero__bottom {
+    display: none;
+  }
+  .service {
+    margin-top: 3rem;
+    height: 100vh;
+  }
+
+  .service p {
+    font-size: 1rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    /* margin-top: -0.8rem; */
+  }
+  .service .top {
+    padding-top: 0.5rem;
+  }
+  .text {
+    text-align: center;
+  }
+
+  .plumbing {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 1rem;
+  }
+
+  .plumbing .plumbing-left img,
+  .plumbing .plumbing-right img {
+    padding-top: 1rem;
+    width: 20rem;
+    height: 15rem;
+    object-fit: contain;
+    padding-bottom: 1rem;
+  }
+
+  .quality {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    align-items: center;
+    background-color: #c4c7cc;
+  }
+  .quality img {
+    height: 20rem;
+    width: 20rem;
+    object-fit: cover;
+  }
+  .quality__info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 7rem;
+    height: 40%;
+    width: 100%;
+  }
+
+  .quality__info h1 {
+    color: #075586;
+    font-size: 2rem;
+    padding-bottom: 1rem;
+    margin-left: 4rem;
+    border-bottom: 0.5rem solid #e71a23;
+  }
+  .quality__info p {
+    display: flex;
+    justify-content: center;
+    margin-left: 5rem;
+    align-items: center;
+  }
+  .quality__info > button {
+    margin-bottom: 1rem;
+  }
+  .our-service {
+    height: 100%;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    margin-top: 1rem;
+  }
+  .our-service__top h2 {
+    font-size: 3rem;
+  }
+  .our-service__bottom {
+    display: block;
+    margin-left: 1rem;
+  }
+  .about {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+  }
+
+  .about__left {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    width: 100%;
+    height: 30%;
+  }
+  .about__left p {
+    margin: 0.5rem;
+  }
+  .about__left h1 {
+    font-size: 2rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+
+  .about__left .about__big {
+    font-size: 2rem;
+  }
+
+  .about__right {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+    margin-right: 1rem;
+  }
+  .about__right img {
+    height: 16rem;
+    width: 16rem;
+  }
+
+  .todo {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    height: 70vh;
+  }
+
+  .todo__headers {
+    display: block;
+    align-content: center;
+  }
+
+  .todo__headers button {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  footer {
+    display: block;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    height: 20vh;
+    width: 100vw;
+  }
+}
