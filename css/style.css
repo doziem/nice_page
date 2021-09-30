@@ -810,6 +810,8 @@ footer p {
     margin-bottom: 1rem;
   }
   .our-service {
+    display: flex;
+    flex-direction: column;
     height: 100%;
     margin-left: 1rem;
     margin-right: 1rem;
