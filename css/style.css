@@ -598,6 +598,29 @@ footer p {
     height: 10px;
     width: 10px;
   }
+
+  .quality {
+    width: 100%;
+    height: 60%;
+  }
+
+  .quality img {
+    height: 90%;
+    width: 35%;
+    object-fit: cover;
+    margin-right: 1rem;
+  }
+  .quality__info {
+    margin-right: 4rem;
+    width: 20%;
+  }
+
+  .quality__info h1 {
+    color: #075586;
+    font-size: 3rem;
+    padding-bottom: 1rem;
+    border-bottom: 0.5rem solid #e71a23;
+  }
   .our-service {
     height: 55%;
     margin-left: 1rem;
