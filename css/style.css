@@ -129,8 +129,9 @@
   font-size: 0.8rem;
   background-color: #e71a23;
   color: #fff;
-  padding: 1rem 3rem;
+  padding: 1.2rem 3.5rem;
   margin-top: 1rem;
+  border: none;
   text-transform: uppercase;
 }
 
@@ -139,11 +140,11 @@
   align-items: center;
   justify-content: center;
   background-color: #fff;
-  height: 100vh;
+  height: 100%;
 }
 
 .plumbing .plumbing-left img {
-  width: 30rem;
+  width: 35rem;
   height: 25rem;
   object-fit: contain;
 }
@@ -154,7 +155,7 @@
   display: flex;
   justify-content: center;
   font-size: 1.1rem;
-  margin-top: 5rem;
+  margin-top: 3rem;
   margin-left: 3rem;
   margin-right: 5rem;
 }
@@ -164,7 +165,7 @@
   font-weight: 700;
 }
 .plumbing .plumbing-right img {
-  width: 30rem;
+  width: 35rem;
   height: 25rem;
   margin-top: 3rem;
   object-fit: cover;
@@ -178,22 +179,22 @@
 
 .quality {
   display: flex;
-  /* width: 100vw; */
-  /* flex-wrap: wrap; */
+  height: 100%;
+  width: 100%;
   justify-content: center;
   align-items: center;
   background-color: #c4c7cc;
 }
 .quality img {
-  height: 700px;
-  width: 40%;
+  height: 100%;
+  width: 35%;
   object-fit: cover;
   margin-right: 2rem;
 }
 .quality__info {
   margin-top: -6rem;
   margin-right: 8rem;
-  width: 55%;
+  width: 45%;
 }
 
 .quality__info h1 {
@@ -212,10 +213,10 @@
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  height: 90vh;
+  height: 95%;
   margin-left: 5rem;
   margin-right: 5rem;
-  padding-top: 2rem;
+  padding: 6rem 1rem 7rem 1rem;
 }
 
 .our-service__top h2 {
@@ -228,7 +229,7 @@
   justify-content: space-between;
   align-items: center;
   padding-top: 2rem;
-  margin-left: 2rem;
+  margin-left: 1rem;
 }
 
 .our-service__electrical,
@@ -336,6 +337,7 @@
 
 .btn-white {
   background-color: #c1c1c1;
+  margin-left: 1rem;
   border: 0.5px solid #333;
 }
 
@@ -348,7 +350,8 @@ footer {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  height: 37vh;
+  height: 30vh;
+  width: 100%;
   background-color: #333333;
   color: #fff;
 }
@@ -376,12 +379,13 @@ footer p {
     flex-direction: column;
   }
   .navbar {
-    width: 80%;
+    width: 100%;
+    justify-content: space-around;
   }
   .hero-bg {
-    height: 70%;
+    height: 80%;
     width: 100%;
-    background-size: cover;
+    object-fit: contain;
     background-repeat: no-repeat;
   }
   .hero {
@@ -404,43 +408,73 @@ footer p {
   .hero-bottom__painting h4,
   .hero-bottom__cleaning h4,
   .hero-bottom__plumbing h4 {
-    font-size: 01rem;
+    font-size: 1rem;
   }
   .service {
-    height: 35vh;
-    width: 80vh;
+    height: 45%;
+    width: 100%;
   }
 
   .plumbing {
-    height: 45vh;
+    height: 100%;
+    width: 100%;
+    margin: 2.5rem 1rem;
   }
 
   .plumbing .plumbing-left p {
-    margin-top: 2rem;
+    margin-top: 1rem;
   }
 
-  .plumbing .plumbing-left {
-    margin-left: 2rem;
+  .plumbing .plumbing-left img {
+    width: 22rem;
+    height: 22rem;
+    margin-right: 0.8rem;
+    object-fit: contain;
   }
 
-  .plumbing .plumbing-right {
+  .plumbing .plumbing-right img {
+    width: 20rem;
+    margin-left: 0.8rem;
+    height: 18rem;
+    object-fit: contain;
+  }
+
+  .quality {
+    width: 100%;
+    height: 60%;
+  }
+
+  .quality img {
+    height: 90%;
+    width: 45%;
+    object-fit: cover;
     margin-right: 2rem;
   }
-  .plumbing .plumbing-left img,
-  .plumbing .plumbing-right img {
-    width: 28rem;
-    height: 24rem;
+  .quality__info {
+    margin-right: 4rem;
+    width: 25%;
   }
+
+  .quality__info h1 {
+    color: #075586;
+    font-size: 4rem;
+    padding-bottom: 1rem;
+    border-bottom: 0.5rem solid #e71a23;
+  }
+
   .our-service {
-    height: 42vh;
+    height: 45%;
+    width: 90%;
+    margin-left: 2rem;
+    margin-right: 3rem;
+    padding: 4rem 1rem 4rem 1rem;
   }
   .about {
     display: flex;
-    /* flex-direction: column; */
     align-items: center;
     justify-content: center;
-    width: 100vw;
-    height: 50vh;
+    width: 100%;
+    height: 70%;
   }
 
   .about__left {
@@ -450,115 +484,119 @@ footer p {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 50%;
+    width: 55%;
     margin-right: 1rem;
   }
   .about__right img {
-    height: 12rem;
-    width: 12rem;
+    height: 10rem;
+    width: 10rem;
   }
+
   .about__left .about__big {
-    font-size: 7rem;
+    font-size: 6rem;
     font-weight: 700;
-    margin-top: -2.5rem;
+  }
+
+  .about__left h1 {
+    font-size: 4rem;
   }
   .todo {
     height: 40vh;
   }
   footer {
     height: 20vh;
+    width: 100%;
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 321px) and (max-width: 767px) {
   .container {
     display: flex;
     align-items: center;
     flex-direction: column;
   }
   .navbar {
-    width: 80%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
   }
   .hero-bg {
-    height: 60%;
+    height: 80%;
     width: 100%;
-    background-size: cover;
+    object-fit: contain;
     background-repeat: no-repeat;
   }
 
   .hero {
-    margin-top: 7rem;
+    margin-top: 6rem;
     margin-left: 1rem;
   }
   .hero h4 {
-    font-size: 1.6rem;
+    font-size: 0.7em;
     font-weight: 200;
   }
 
   .hero h1 {
     text-align: start;
-    font-size: 2.8rem;
+    font-size: 1.2rem;
     letter-spacing: 0.6rem;
     font-weight: 800;
   }
   .hero .hero__horizotal {
-    border-bottom: 0.8rem solid #fff;
-    margin-top: 1.2rem;
-    width: 50vw;
+    border-bottom: 0.4rem solid #fff;
+    margin-top: 0.8rem;
+    width: 50%;
+  }
+
+  .hero__bottom .hero-bottom__painting img,
+  .hero-bottom__cleaning img,
+  .hero-bottom__plumbing img {
+    height: 2.5rem;
+    width: 2.5rem;
+    /* padding-bottom: 1.2rem; */
   }
   .hero-bottom__painting h4,
   .hero-bottom__cleaning h4,
   .hero-bottom__plumbing h4 {
-    font-size: 1rem;
-  }
-  .service {
-    height: 55vh;
-  }
-
-  .service p {
-    font-size: 1.2rem;
-    padding-left: 2rem;
-    padding-right: 2rem;
-  }
-  .service .top {
-    padding-top: 2rem;
-  }
-  .text {
-    text-align: center;
+    font-size: 0.4rem;
   }
 
   .plumbing {
-    height: 100vh;
     display: flex;
     flex-direction: column;
-  }
-
-  .plumbing .plumbing-left p {
-    margin-top: 2rem;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
   }
 
   .plumbing .plumbing-left {
-    margin-left: 1rem;
+    display: flex;
+    /* align-items: center; */
+    /* justify-content: center; */
+    flex-direction: column;
   }
 
-  .plumbing .plumbing-right {
-    margin-right: 1rem;
-    margin-left: 2rem;
-  }
-  .plumbing .plumbing-right h1,
-  .plumbing .plumbing-right h3 {
-    margin-left: 2rem;
-  }
-  .plumbing .plumbing-left img,
-  .plumbing .plumbing-right img {
-    padding-top: 4rem;
-    width: 730px;
-    height: 400px;
-    object-fit: cover;
-    padding-bottom: 5rem;
+  .plumbing-left > img {
+    height: 10rem;
+    width: 10rem;
   }
 
-  .quality {
+  .plumbing-left p {
+    margin-left: 0.5rem;
+  }
+
+  .plumbing-right {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .plumbing-right .plumbing-right img {
+    height: 10px;
+    width: 10px;
+  }
+  /* .quality {
     display: flex;
     justify-content: center;
     height: 60vh;
@@ -566,19 +604,18 @@ footer p {
     background-color: #c4c7cc;
   }
   .quality img {
-    height: 500px;
-    width: 50%;
+    height: 45%;
+    width: 45%;
     object-fit: contain;
-    margin-left: 7rem;
   }
   .quality__info {
-    margin-top: -6rem;
     width: 55%;
-  }
+  } */
   .our-service {
     height: 55vh;
     margin-left: 1rem;
     margin-right: 1rem;
+    width: 100%;
   }
 
   .our-service__bottom {
@@ -591,7 +628,7 @@ footer p {
     justify-content: center;
     flex-direction: column;
     width: 100%;
-    height: 100vh;
+    height: 100%;
   }
 
   .about__left {
