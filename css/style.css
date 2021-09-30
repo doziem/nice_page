@@ -696,7 +696,7 @@ footer p {
   }
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 520px) {
   .container {
     width: 100%;
   }
@@ -821,7 +821,8 @@ footer p {
     font-size: 3rem;
   }
   .our-service__bottom {
-    display: block;
+    display: flex;
+    flex-direction: column;
     margin-left: 1rem;
   }
   .about {
