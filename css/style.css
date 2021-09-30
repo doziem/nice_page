@@ -617,7 +617,7 @@ footer p {
   }
   .quality__info {
     margin-right: 2rem;
-    width: 35%;
+    width: 45%;
   }
 
   .quality__info h1 {
@@ -668,8 +668,8 @@ footer p {
     margin-right: 1rem;
   }
   .about__right img {
-    height: 15rem;
-    width: 15rem;
+    height: 18rem;
+    width: 18rem;
   }
 
   .todo {
