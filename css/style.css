@@ -502,10 +502,11 @@ footer p {
   }
   .todo {
     height: 40vh;
+    width: 100vw;
   }
   footer {
     height: 20vh;
-    width: 100%;
+    width: 100vw;
   }
 }
 
