@@ -696,7 +696,7 @@ footer p {
   }
 }
 
-@media screen and (max-width: 420px) {
+@media screen and (max-width: 320px) {
   .container {
     width: 100%;
   }
@@ -709,7 +709,7 @@ footer p {
     object-fit: contain;
     height: 100%;
     width: 100%;
-    margin-left: -10rem;
+    background-size: cover;
     background-repeat: no-repeat;
   }
 
